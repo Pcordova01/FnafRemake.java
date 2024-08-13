@@ -2,7 +2,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Fnafremake {
+public class Fnaf_Remake {
   
   //Main function for main menu
     public static void main(String[] args) {
