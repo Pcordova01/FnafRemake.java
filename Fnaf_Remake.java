@@ -24,7 +24,8 @@ public class Fnaf_Remake {
       while (true) {
         System.out.println("Press '1' for easy mode\nPress '2' for hard mode\nPress '3' to exit");
         choice = scanner.nextInt();
-        
+
+        //If player chooses to play easy mode
         if (choice == 1) {
           
           System.out.println("You have selected easy mode...\n");
@@ -37,6 +38,8 @@ public class Fnaf_Remake {
           }
               
         }
+
+        //If player chooses to play hard mode
         else if (choice == 2) {
           
           System.out.println("You have selected hard mode...\n");
