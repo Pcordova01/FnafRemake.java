@@ -27,10 +27,12 @@ public class Fnaf_Remake {
 
         //If player chooses to play easy mode
         if (choice == 1) {
-          
+
+          //Tell the player they have selected easy mode
           System.out.println("You have selected easy mode...\n");
-          
-          gameOver = Easygame(scanner); // Call the game method and update gameOver based on its result
+
+          //Calls Easygame method and updates gameOver based on the result
+          gameOver = Easygame(scanner); 
           
           // Display welcome screen once more (if the game has ended)
           if (gameOver) {
@@ -42,8 +44,10 @@ public class Fnaf_Remake {
         //If player chooses to play hard mode
         else if (choice == 2) {
           
+          //Tell the player they have selected hard mode
           System.out.println("You have selected hard mode...\n");
-          
+
+          //Calls Hardgame method and updates gameOver based on the result
           gameOver = Hardgame(scanner); 
           
           // Display welcome screen once more (if the game has ended)
@@ -51,10 +55,18 @@ public class Fnaf_Remake {
             System.out.println("Welcome to Five Nights at Freddy's (simple java edition)");
           }
         }
+
+        //If player chooses to exit
         else if (choice == 3){
+
+          //Tell the player goodbye
           System.out.println("Goodbye...");
+
+          //Terminate the program
           break;
         }
+
+        //If the player doesn't enter a valid input
         else {
           System.out.println("Error... try again");
           System.out.println("Five Nights at Freddy's (simple java edition)");
